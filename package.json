@@ -1,10 +1,10 @@
 {
-  "name": "graphql-tumblr",
-  "version": "1.0.4",
+  "name": "gql-tumblr",
+  "version": "1.0.0",
   "description": "A GraphQL wrapper for Tumblr's API",
   "main": "./src/index.js",
-  "repository": "https://github.com/JEstes93/graphql-tumblr.git",
-  "author": "John Estes <jestes93development@gmail.com> (https://github.com/JEstes93)",
+  "repository": "https://gitlab.com/bitti/graphql-tumblr.git",
+  "author": "Marco Foggiato <bitti06@gmail.com> (https://gitlab.com/bitti)",
   "license": "MIT",
   "keywords": [
     "tumblr",
