@@ -1,6 +1,6 @@
 {
   "name": "gql-tumblr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A GraphQL wrapper for Tumblr's API",
   "main": "./src/index.js",
   "repository": "https://gitlab.com/bitti/graphql-tumblr.git",
@@ -8,6 +8,7 @@
   "license": "MIT",
   "keywords": [
     "tumblr",
+    "gql-tumblr",
     "graphql",
     "tumblr-graphql",
     "graphql-tumblr",
@@ -30,9 +31,9 @@
     "jest": "^22.4.3"
   },
   "scripts": {
-    "clear": "del /f graphql-tumblr-*.tgz",
+    "clear": "del /f gql-tumblr-*.tgz",
     "make": "yarn pack",
-    "move": "copy graphql-tumblr-*.tgz ..\\TWTesting\\",
+    "move": "copy gql-tumblr-*.tgz ..\\TWTesting\\",
     "build": "run-s clear make move"
   }
 }
