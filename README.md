@@ -1,6 +1,7 @@
 # gql-tumblr
 A GraphQL wrapper for Tumblr's API
-Based on  [graphql-tumblr](https://github.com/JEstes93/graphql-tumblr)   by JEstes93  with some adddons.
+
+Based on  [graphql-tumblr](https://github.com/JEstes93/graphql-tumblr) by JEstes93 with some adddons.
 ### Dependencies:
 
 * [graphql-js](https://github.com/graphql/graphql-js) - a JavaScript GraphQL runtime.
