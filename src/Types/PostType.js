@@ -11,6 +11,7 @@ const {
 const TrailType = require('./TrailType');
 const PhotoType = require('./PhotoType');
 const PostReblogType = require('./PostReblogType');
+const NotesType = require('./NotesType');
 
 module.exports = new GraphQLObjectType({
 	name: "Post",
@@ -38,7 +39,7 @@ module.exports = new GraphQLObjectType({
 		},
 		photos: {
 			type: GraphQLList(PhotoType),
-				  defaultValue:"jarda",
+			defaultValue:"jarda",
 			description: "List of photos that this post contains.",
 		},
 		image_permalink: {
@@ -53,6 +54,14 @@ module.exports = new GraphQLObjectType({
 			type: GraphQLString,
 			description: "This video's URL.",
 		},
+		video_type: {
+			type: GraphQLString,
+			description: "This video_type",
+		},
+		permalink_url: {
+			type: GraphQLString,
+			description: "This permalink_url",
+		},
 		thumbnail_url: {
 			type: GraphQLString,
 			description: "This video's thumbnail URL.",
@@ -61,9 +70,21 @@ module.exports = new GraphQLObjectType({
 			type: GraphQLList(TrailType),
 			description: "List of post's reblogs beginning with the initial poster.",
 		},
+		notes: {
+			type: GraphQLList(NotesType),
+			description: "Notes information on this post.",
+		},
 		reblog: {
 			type: PostReblogType,
 			description: "Reblog information on this post.",
+		},
+		reblogged_root_id: {
+			type: GraphQLString,
+			description: "reblogged_root_id information on this post.",
+		},
+		reblogged_root_name: {
+			type: GraphQLString,
+			description: "reblogged_root_name information on this post.",
 		},
 		caption: {
 			type: GraphQLString,
