@@ -1,9 +1,9 @@
 {
   "name": "gql-tumblr",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A GraphQL wrapper for Tumblr's API",
   "main": "./src/index.js",
-  "repository": "https://gitlab.com/bitti/graphql-tumblr.git",
+  "repository": "https://gitlab.com/bitti/gql-tumblr.git",
   "author": "Marco Foggiato <bitti06@gmail.com> (https://gitlab.com/bitti)",
   "license": "MIT",
   "keywords": [
@@ -24,7 +24,7 @@
   ],
   "dependencies": {
     "graphql": "^0.13.2",
-    "tumblr.js": "^1.1.1",
+    "tumblr.js": "^2.0.0",
     "yarn-run-all": "^3.1.1"
   },
   "devDependencies": {
