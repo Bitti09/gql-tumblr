@@ -39,8 +39,8 @@ module.exports = new GraphQLObjectType({
 		},
 		photos: {
 			type: GraphQLList(PhotoType),
-			defaultValue:"jarda",
-			description: "List of photos that this post contains.",
+			//defaultValue:"jarda",
+			//description: "List of photos that this post contains.",
 		},
 		image_permalink: {
 			type: GraphQLString,
@@ -161,6 +161,10 @@ module.exports = new GraphQLObjectType({
 		id: {
 			type: GraphQLFloat,
 			description: "This post's unique Tumblr ID.",
+		},
+		id_string: {
+			type: GraphQLString,
+			description: "This post's unique Tumblr ID String.",
 		},
 		blog_name: {
 			type: GraphQLString,

@@ -27,12 +27,7 @@ module.exports = options => {
 			/**
 			 * Available schemas
 			 */
-			Schemas: {
-				/**
-				 * Includes CRUD and OAuth1.0a-only endpoints
-				 * @param {FullSchemaOptions} creds OAuth1.0a credentials to use for the required endpoints
-				 * @returns {GraphQLSchema}
-				 */
+			Schema: {
 				Full: creds =>
 					require(__dirname + "/Schemas/FullSchema")(
 						tumblr.createClient({
@@ -41,13 +36,6 @@ module.exports = options => {
 							returnPromises: true
 						})
 					),
-				/**
-				 * Only includes endpoints accessible with just an API key
-				 * @type {GraphQLSchema}
-				 */
-				API_Only: require(__dirname + "/Schemas/LimitedSchema")(
-					tumblr.createClient({ ...options, returnPromises: true })
-				)
 			}
 		};
 	} else throw Error("graphql-tumblr-wrapper requires a consumer_key, and consumer_secret to access the Tumblr API!");
