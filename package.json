@@ -27,18 +27,16 @@
     "tumblr-graphql-wrapper"
   ],
   "dependencies": {
-    "graphql": "^15.5.2",
-    "npm-run-all": "latest",
-    "tumblr.js": "^3.0.0"
+    "graphql": "^15.3.0",
+    "tumblr.js": "^3.0.0",
+    "npm-run-all": "latest"
   },
   "devDependencies": {
-    "jest": "27.1.0"
-  },
-  "resolutions:": {
+    "jest": "^26.4.2"
+  },  
+  "resolutions:" :{
     "graphql": "15.x"
-
-},
-  "scripts": {
+},  "scripts": {
     "clear": "del /f gql-tumblr-*.tgz",
     "make": "yarn pack",
     "move": "copy gql-tumblr-*.tgz ..\\TWTesting\\",
