@@ -89,6 +89,10 @@ module.exports = client => ({
                 type: GraphQLFloat,
                 description: "Specific post ID to return. If set, only returns a single post.",
             },
+            id_string: {
+                type: GraphQLString,
+                description: "Specific post ID to return. If set, only returns a single post1.",
+            },
             reblog_info: {
                 type: GraphQLBoolean,
                 description: "If true, query returns reblog information.",
@@ -98,7 +102,7 @@ module.exports = client => ({
                 description: "If true, query returns notes information.",
             },
         },
-        resolve: (root, args) => client.blogPosts(args.blog_name, { ...args, }),
+        resolve: (root, args) => client.blogPosts(args.blog_name, { ...args, 'id': args.id_string, }),
     },
     TaggedPosts: {
         type: GraphQLList(PostType),
