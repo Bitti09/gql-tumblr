@@ -31,7 +31,7 @@
     "npm-run-all": "latest"
   },
   "devDependencies": {
-    "jest": "^26.4.2"
+    "jest": "26.5.3"
   },
   "resolutions:": {
     "graphql": "15.x"
