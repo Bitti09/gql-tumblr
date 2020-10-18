@@ -1,12 +1,6 @@
 
 const {
-	GraphQLSchema,
-	GraphQLObjectType,
-	GraphQLInt,
-	GraphQLString,
-	GraphQLList,
-    GraphQLBoolean,
-    GraphQLFloat
+	GraphQLSchema
 } = require("graphql");
 
 module.exports = client => new GraphQLSchema({

@@ -33,7 +33,6 @@ module.exports = client => new GraphQLObjectType({
             description: 'Returns info on the querying user.',
             resolve: root => client.userInfo().then(d => d.user)
         },
-
         Dashboard: {
             type: GraphQLList(PostType),
             description: 'Returns dashboard feed posts for the querying user.',
@@ -64,7 +63,7 @@ module.exports = client => new GraphQLObjectType({
                     description: "If true, returns notes information for each post. (Defaults to false)"
                 }
             },
-            resolve: (root, args) => client.userDashboard(args).then(dash => dash.posts),
+            resolve: (_, args) => client.userDashboard(args).then(dash => dash.posts),
         },
 
 
@@ -87,7 +86,7 @@ module.exports = client => new GraphQLObjectType({
                     description: "Method with which to filter liked posts. (Defaults to none, only valid settings: offset, before, or after)"
                 },
             },
-            resolve: (root, args) => client.userLikes({ limit: args.limit, [args.method]: args.num, }),
+            resolve: (_, args) => client.userLikes({ limit: args.limit, [args.method]: args.num, }),
         },
 
         UserFollowing: {
@@ -103,7 +102,7 @@ module.exports = client => new GraphQLObjectType({
                     description: "The blog number to start at. (Defaults to 0)"
                 },
             },
-            resolve: (root, args) => client.userFollowing(args),
+            resolve: (_, args) => client.userFollowing(args),
         },
     }
 });
