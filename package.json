@@ -1,6 +1,7 @@
 {
   "name": "@bitti09/gql-tumblr",
   "version": "1.1.5",
+  "name": "gql-tumblr",
   "description": "A GraphQL wrapper for Tumblr's API",
   "main": "./src/index.js",
   "publishConfig": {
@@ -35,7 +36,8 @@
   },
   "resolutions:": {
     "graphql": "15.x"
-  },
+
+},
   "scripts": {
     "clear": "del /f gql-tumblr-*.tgz",
     "make": "yarn pack",
