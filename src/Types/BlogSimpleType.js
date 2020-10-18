@@ -57,7 +57,6 @@ module.exports = new GraphQLObjectType({
       },
       queue: {
         type: GraphQLInt,
-
       },
       primary: {
         type: GraphQLBoolean,
