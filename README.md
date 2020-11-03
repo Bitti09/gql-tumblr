@@ -1,5 +1,6 @@
 # gql-tumblr
 A GraphQL wrapper for Tumblr's API
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/Bitti09/gql-tumblr)
 
 Based on  [graphql-tumblr](https://github.com/JEstes93/graphql-tumblr) by JEstes93 with some adddons.
 ### Dependencies:
