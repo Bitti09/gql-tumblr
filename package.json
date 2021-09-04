@@ -26,15 +26,17 @@
     "tumblr-graphql-wrapper"
   ],
   "dependencies": {
-    "graphql": "^15.3.0",
     "tumblr.js": "^3.0.0",
     "npm-run-all": "latest"
   },
   "devDependencies": {
     "jest": "^26.4.2"
   },
-  "resolutions:": {
+  "peerDependencies": {
     "graphql": "15.x"
+  },
+  "resolutions": {
+    "graphql": "^15.x"
   },
   "scripts": {
     "clear": "del /f gql-tumblr-*.tgz",
