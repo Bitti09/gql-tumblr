@@ -30,7 +30,7 @@
     "npm-run-all": "latest"
   },
   "devDependencies": {
-    "jest": "^26.4.2"
+    "jest": "^27.2.1"
   },
   "peerDependencies": {
     "graphql": "15.x"
