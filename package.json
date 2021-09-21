@@ -32,9 +32,7 @@
   "devDependencies": {
     "jest": "^27.2.1"
   },
-  "peerDependencies": {
-    "graphql": "15.x"
-  },
+
   "resolutions": {
     "graphql": "^15.x"
   },
