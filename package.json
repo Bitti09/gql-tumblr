@@ -30,7 +30,7 @@
     "npm-run-all": "latest"
   },
   "devDependencies": {
-    "jest": "^27.2.4"
+    "jest": "^27.5.1"
   },
 
   "resolutions": {
