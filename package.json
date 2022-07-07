@@ -34,7 +34,7 @@
   },
 
   "resolutions": {
-    "graphql": "^15.x"
+    "graphql": "^16.0.0"
   },
   "scripts": {
     "clear": "del /f gql-tumblr-*.tgz",
