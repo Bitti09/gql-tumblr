@@ -27,7 +27,7 @@
   ],
   "dependencies": {
     "npm-run-all": "latest",
-    "tumblr.js": "^3.0.0"
+    "tumblr.js": "^4.0.0"
   },
   "devDependencies": {
     "jest": "^29.2.2"
